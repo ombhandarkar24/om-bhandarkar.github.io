@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- SEO -->
+  <title>Om Bhandarkar | Data Analyst</title>
+  <meta name="description" content="Data Analyst skilled in SQL, Python & Power BI. Turning data into business decisions.">
+  <meta name="author" content="Om Bhandarkar">
+
+  <!-- OpenGraph (LinkedIn Preview) -->
+  <meta property="og:title" content="Om Bhandarkar | Data Analyst Portfolio">
+  <meta property="og:description" content="Turning complex data into executive-ready insights">
+  <meta property="og:image" content="assets/preview.png">
+  <meta property="og:url" content="https://ombhandarkar24.github.io">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <h2 class="logo">Om Bhandarkar</h2>
+  <div class="nav-right">
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+
+    <!-- Toggle -->
+    <div class="theme-switch">
+      <input type="checkbox" id="theme-toggle">
+      <label for="theme-toggle"></label>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero bg">
+  <div class="data-bg">
+    <span></span><span></span><span></span><span></span>
+  </div>
+
+  <h1>Om Bhandarkar</h1>
+  <h2>Data Analyst | SQL • Python • Power BI</h2>
+  <p class="hero-subtitle">Turning complex data into clear business decisions</p>
+
+  <div class="hero-buttons">
+    <a href="#projects" class="btn-primary">
+      <i class="fas fa-chart-line"></i> View Projects
+    </a>
+    <a href="assets/Om_Bhandarkar_Resume.pdf" download class="btn-outline">
+      <i class="fas fa-download"></i> Resume
+    </a>
+  </div>
+</section>
+
+<!-- WHAT I BRING -->
+<section class="section">
+  <h3><i class="fas fa-briefcase"></i> What I Bring as a Data Analyst</h3>
+
+  <div class="bring-grid">
+    <div class="bring-card">
+      <i class="fas fa-arrow-right-arrow-left"></i>
+      <h4>Data → Decisions</h4>
+      <p>Transforming raw datasets into insights that drive KPIs.</p>
+    </div>
+
+    <div class="bring-card">
+      <i class="fas fa-building"></i>
+      <h4>Business-First Thinking</h4>
+      <p>Every analysis starts with a business question.</p>
+    </div>
+
+    <div class="bring-card">
+      <i class="fas fa-database"></i>
+      <h4>Clean SQL & Reproducible Analysis</h4>
+      <p>Optimized queries, structured pipelines, scalable logic.</p>
+    </div>
+
+    <div class="bring-card">
+      <i class="fas fa-chart-pie"></i>
+      <h4>Executive-Ready Dashboards</h4>
+      <p>Power BI dashboards designed for leadership.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section bg">
+  <h3><i class="fas fa-diagram-project"></i> Projects</h3>
+
+  <div class="project-row">
+    <div class="project-card">
+      <h4>📊 Financial Insights Dashboard</h4>
+      <p>Power BI dashboard delivering revenue & risk insights.</p>
+      <span>Power BI • SQL</span>
+    </div>
+
+    <div class="project-card">
+      <h4>📈 Trade Performance Analysis</h4>
+      <p>ROI, Sharpe Ratio & drawdown analytics.</p>
+      <span>Python • Pandas</span>
+    </div>
+
+    <div class="project-card">
+      <h4>🧠 ML Classification System</h4>
+      <p>Defect detection using supervised learning.</p>
+      <span>ML • Evaluation</span>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <h3><i class="fas fa-envelope"></i> Contact Me</h3>
+
+  <form class="contact-form"
+        action="mailto:your-email@gmail.com"
+        method="post"
+        enctype="text/plain">
+
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message"></textarea>
+    <button type="submit" class="btn-primary">Send Message</button>
+  </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <a href="https://www.linkedin.com/in/YOUR-LINK" target="_blank"><i class="fab fa-linkedin"></i></a>
+  <a href="https://github.com/ombhandarkar24" target="_blank"><i class="fab fa-github"></i></a>
+  <a href="mailto:your-email@gmail.com"><i class="fas fa-envelope"></i></a>
+  <p>© 2026 Om Bhandarkar</p>
+</footer>
+
+<!-- JS -->
+<script>
+  ScrollReveal().reveal('.section', {
+    distance: '50px',
+    duration: 800,
+    easing: 'ease-out',
+    origin: 'bottom',
+    interval: 150
+  });
+
+  document.getElementById("theme-toggle").addEventListener("change", () => {
+    document.body.classList.toggle("light-mode");
+  });
+</script>
+
+</body>
+</html>
