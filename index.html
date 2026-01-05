@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -18,7 +17,7 @@
   <meta property="og:type" content="website">
 
   <!-- Fonts & Icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <link rel="stylesheet" href="style.css">
@@ -31,6 +30,8 @@
 <nav>
   <h2 class="logo">Om Bhandarkar</h2>
   <div class="nav-right">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
 
@@ -43,108 +44,374 @@
 </nav>
 
 <!-- HERO -->
-<section class="hero bg">
+<section class="hero">
   <div class="data-bg">
     <span></span><span></span><span></span><span></span>
+    <span></span><span></span>
   </div>
 
-  <h1>Om Bhandarkar</h1>
-  <h2>Data Analyst | SQL • Python • Power BI</h2>
-  <p class="hero-subtitle">Turning complex data into clear business decisions</p>
+  <div class="hero-content">
+    <div class="hero-badge">👋 Welcome to my portfolio</div>
+    <h1>Om Bhandarkar</h1>
+    <h2 class="hero-title">Data Analyst</h2>
+    <div class="hero-tech">
+      <span class="tech-pill">SQL</span>
+      <span class="tech-pill">Python</span>
+      <span class="tech-pill">Power BI</span>
+      <span class="tech-pill">Excel</span>
+    </div>
+    <p class="hero-subtitle">Transforming complex data into actionable insights that drive strategic business decisions</p>
 
-  <div class="hero-buttons">
-    <a href="#projects" class="btn-primary">
-      <i class="fas fa-chart-line"></i> View Projects
-    </a>
-    <a href="assets/Om_Bhandarkar_Resume.pdf" download class="btn-outline">
-      <i class="fas fa-download"></i> Resume
-    </a>
+    <div class="hero-buttons">
+      <a href="#projects" class="btn-primary">
+        <i class="fas fa-chart-line"></i> View Projects
+      </a>
+      <a href="assets/Om_Bhandarkar_Resume.pdf" download class="btn-outline">
+        <i class="fas fa-download"></i> Download Resume
+      </a>
+    </div>
+  </div>
+
+  <div class="scroll-indicator">
+    <div class="mouse"></div>
   </div>
 </section>
 
-<!-- WHAT I BRING -->
-<section class="section">
-  <h3><i class="fas fa-briefcase"></i> What I Bring as a Data Analyst</h3>
+<!-- ABOUT / WHAT I BRING -->
+<section id="about" class="section">
+  <div class="section-header">
+    <span class="section-tag">About Me</span>
+    <h3>What I Bring as a Data Analyst</h3>
+    <p class="section-description">Combining technical expertise with business acumen to deliver insights that matter</p>
+  </div>
 
   <div class="bring-grid">
     <div class="bring-card">
-      <i class="fas fa-arrow-right-arrow-left"></i>
-      <h4>Data → Decisions</h4>
-      <p>Transforming raw datasets into insights that drive KPIs.</p>
+      <div class="card-icon">
+        <i class="fas fa-database"></i>
+      </div>
+      <h4>Data Engineering</h4>
+      <p>Expert in SQL optimization, ETL pipelines, and data warehouse design. Building scalable data infrastructure that powers analytics.</p>
+      <div class="card-tags">
+        <span>SQL</span>
+        <span>ETL</span>
+        <span>Data Modeling</span>
+      </div>
     </div>
 
     <div class="bring-card">
-      <i class="fas fa-building"></i>
-      <h4>Business-First Thinking</h4>
-      <p>Every analysis starts with a business question.</p>
+      <div class="card-icon">
+        <i class="fas fa-chart-line"></i>
+      </div>
+      <h4>Business Intelligence</h4>
+      <p>Creating executive-ready dashboards and reports that translate complex data into clear, actionable business insights.</p>
+      <div class="card-tags">
+        <span>Power BI</span>
+        <span>Tableau</span>
+        <span>Visualization</span>
+      </div>
     </div>
 
     <div class="bring-card">
-      <i class="fas fa-database"></i>
-      <h4>Clean SQL & Reproducible Analysis</h4>
-      <p>Optimized queries, structured pipelines, scalable logic.</p>
+      <div class="card-icon">
+        <i class="fas fa-code"></i>
+      </div>
+      <h4>Advanced Analytics</h4>
+      <p>Leveraging Python for statistical analysis, predictive modeling, and automation of analytical workflows.</p>
+      <div class="card-tags">
+        <span>Python</span>
+        <span>Pandas</span>
+        <span>Machine Learning</span>
+      </div>
     </div>
 
     <div class="bring-card">
-      <i class="fas fa-chart-pie"></i>
-      <h4>Executive-Ready Dashboards</h4>
-      <p>Power BI dashboards designed for leadership.</p>
+      <div class="card-icon">
+        <i class="fas fa-lightbulb"></i>
+      </div>
+      <h4>Strategic Thinking</h4>
+      <p>Every analysis begins with understanding the business problem. Connecting data insights to strategic objectives and KPIs.</p>
+      <div class="card-tags">
+        <span>Strategy</span>
+        <span>KPIs</span>
+        <span>ROI Analysis</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section bg-alt">
+  <div class="section-header">
+    <span class="section-tag">Technical Stack</span>
+    <h3>Skills & Technologies</h3>
+  </div>
+
+  <div class="skills-container">
+    <div class="skill-category">
+      <h4><i class="fas fa-database"></i> Data & Databases</h4>
+      <div class="skill-list">
+        <div class="skill-item">
+          <span>SQL (MySQL, PostgreSQL)</span>
+          <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+        </div>
+        <div class="skill-item">
+          <span>Excel (Advanced)</span>
+          <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+        </div>
+        <div class="skill-item">
+          <span>Data Modeling</span>
+          <div class="skill-bar"><div class="skill-fill" style="width: 80%"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="skill-category">
+      <h4><i class="fas fa-chart-pie"></i> Visualization & BI</h4>
+      <div class="skill-list">
+        <div class="skill-item">
+          <span>Power BI</span>
+          <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+        </div>
+        <div class="skill-item">
+          <span>Tableau</span>
+          <div class="skill-bar"><div class="skill-fill" style="width: 75%"></div></div>
+        </div>
+        <div class="skill-item">
+          <span>Dashboard Design</span>
+          <div class="skill-bar"><div class="skill-fill" style="width: 88%"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="skill-category">
+      <h4><i class="fas fa-code"></i> Programming & Analytics</h4>
+      <div class="skill-list">
+        <div class="skill-item">
+          <span>Python (Pandas, NumPy)</span>
+          <div class="skill-bar"><div class="skill-fill" style="width: 82%"></div></div>
+        </div>
+        <div class="skill-item">
+          <span>Statistical Analysis</span>
+          <div class="skill-bar"><div class="skill-fill" style="width: 80%"></div></div>
+        </div>
+        <div class="skill-item">
+          <span>Machine Learning</span>
+          <div class="skill-bar"><div class="skill-fill" style="width: 70%"></div></div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- PROJECTS -->
-<section id="projects" class="section bg">
-  <h3><i class="fas fa-diagram-project"></i> Projects</h3>
+<section id="projects" class="section">
+  <div class="section-header">
+    <span class="section-tag">Portfolio</span>
+    <h3>Featured Projects</h3>
+    <p class="section-description">Real-world analytics projects demonstrating end-to-end data analysis capabilities</p>
+  </div>
 
-  <div class="project-row">
+  <div class="projects-grid">
     <div class="project-card">
-      <h4>📊 Financial Insights Dashboard</h4>
-      <p>Power BI dashboard delivering revenue & risk insights.</p>
-      <span>Power BI • SQL</span>
+      <div class="project-number">01</div>
+      <div class="project-icon">
+        <i class="fas fa-chart-bar"></i>
+      </div>
+      <h4>Financial Insights Dashboard</h4>
+      <p>Comprehensive Power BI dashboard analyzing revenue trends, risk metrics, and profitability drivers across business segments. Enabled leadership to identify $2M+ in cost optimization opportunities.</p>
+      <div class="project-tags">
+        <span><i class="fas fa-database"></i> SQL</span>
+        <span><i class="fas fa-chart-line"></i> Power BI</span>
+        <span><i class="fas fa-table"></i> Excel</span>
+      </div>
+      <div class="project-metrics">
+        <div class="metric">
+          <div class="metric-value">15+</div>
+          <div class="metric-label">KPIs Tracked</div>
+        </div>
+        <div class="metric">
+          <div class="metric-value">5</div>
+          <div class="metric-label">Data Sources</div>
+        </div>
+        <div class="metric">
+          <div class="metric-value">10K+</div>
+          <div class="metric-label">Records</div>
+        </div>
+      </div>
+      <div class="project-links">
+        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View Dashboard</a>
+        <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+      </div>
     </div>
 
     <div class="project-card">
-      <h4>📈 Trade Performance Analysis</h4>
-      <p>ROI, Sharpe Ratio & drawdown analytics.</p>
-      <span>Python • Pandas</span>
+      <div class="project-number">02</div>
+      <div class="project-icon">
+        <i class="fas fa-chart-line"></i>
+      </div>
+      <h4>Trade Performance Analytics</h4>
+      <p>Python-based analysis framework calculating ROI, Sharpe ratios, and drawdown metrics for portfolio optimization. Implemented automated reporting with statistical validation.</p>
+      <div class="project-tags">
+        <span><i class="fab fa-python"></i> Python</span>
+        <span><i class="fas fa-square-root-alt"></i> Pandas</span>
+        <span><i class="fas fa-chart-area"></i> Matplotlib</span>
+      </div>
+      <div class="project-metrics">
+        <div class="metric">
+          <div class="metric-value">8</div>
+          <div class="metric-label">Strategies</div>
+        </div>
+        <div class="metric">
+          <div class="metric-value">2 Yrs</div>
+          <div class="metric-label">Data Range</div>
+        </div>
+        <div class="metric">
+          <div class="metric-value">95%</div>
+          <div class="metric-label">Accuracy</div>
+        </div>
+      </div>
+      <div class="project-links">
+        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View Analysis</a>
+        <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+      </div>
     </div>
 
     <div class="project-card">
-      <h4>🧠 ML Classification System</h4>
-      <p>Defect detection using supervised learning.</p>
-      <span>ML • Evaluation</span>
+      <div class="project-number">03</div>
+      <div class="project-icon">
+        <i class="fas fa-brain"></i>
+      </div>
+      <h4>ML Classification System</h4>
+      <p>Machine learning model for automated defect detection with comprehensive evaluation metrics. Achieved 92% accuracy using ensemble methods and feature engineering.</p>
+      <div class="project-tags">
+        <span><i class="fab fa-python"></i> Python</span>
+        <span><i class="fas fa-brain"></i> Scikit-learn</span>
+        <span><i class="fas fa-project-diagram"></i> ML</span>
+      </div>
+      <div class="project-metrics">
+        <div class="metric">
+          <div class="metric-value">92%</div>
+          <div class="metric-label">Accuracy</div>
+        </div>
+        <div class="metric">
+          <div class="metric-value">5K+</div>
+          <div class="metric-label">Samples</div>
+        </div>
+        <div class="metric">
+          <div class="metric-value">12</div>
+          <div class="metric-label">Features</div>
+        </div>
+      </div>
+      <div class="project-links">
+        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View Model</a>
+        <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="section">
-  <h3><i class="fas fa-envelope"></i> Contact Me</h3>
+<section id="contact" class="section bg-alt">
+  <div class="section-header">
+    <span class="section-tag">Get In Touch</span>
+    <h3>Let's Connect</h3>
+    <p class="section-description">Open to opportunities and collaborations. Feel free to reach out!</p>
+  </div>
 
-  <form class="contact-form"
-        action="mailto:your-email@gmail.com"
-        method="post"
-        enctype="text/plain">
+  <div class="contact-container">
+    <div class="contact-info">
+      <div class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <div>
+          <h4>Email</h4>
+          <a href="mailto:ombhandarkar2410@gmail.com">ombhandarkar2410@gmail.com</a>
+        </div>
+      </div>
+      <div class="contact-item">
+        <i class="fab fa-linkedin"></i>
+        <div>
+          <h4>LinkedIn</h4>
+          <a href="https://www.linkedin.com/in/YOUR-LINK" target="_blank">Connect with me</a>
+        </div>
+      </div>
+      <div class="contact-item">
+        <i class="fab fa-github"></i>
+        <div>
+          <h4>GitHub</h4>
+          <a href="https://github.com/ombhandarkar24" target="_blank">View my code</a>
+        </div>
+      </div>
+      <div class="contact-item">
+        <i class="fas fa-file-alt"></i>
+        <div>
+          <h4>Resume</h4>
+          <a href="assets/Om_Bhandarkar_Resume.pdf" download>Download PDF</a>
+        </div>
+      </div>
+    </div>
 
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" placeholder="Your Message"></textarea>
-    <button type="submit" class="btn-primary">Send Message</button>
-  </form>
+    <form class="contact-form"
+          action="mailto:ombhandarkar2410@gmail.com"
+          method="post"
+          enctype="text/plain">
+      <div class="form-group">
+        <input type="text" name="name" placeholder="Your Name" required>
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Your Email" required>
+      </div>
+      <div class="form-group">
+        <input type="text" name="subject" placeholder="Subject" required>
+      </div>
+      <div class="form-group">
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn-primary">
+        <i class="fas fa-paper-plane"></i> Send Message
+      </button>
+    </form>
+  </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <a href="https://www.linkedin.com/in/YOUR-LINK" target="_blank"><i class="fab fa-linkedin"></i></a>
-  <a href="https://github.com/ombhandarkar24" target="_blank"><i class="fab fa-github"></i></a>
-  <a href="mailto:your-email@gmail.com"><i class="fas fa-envelope"></i></a>
-  <p>© 2026 Om Bhandarkar</p>
+  <div class="footer-content">
+    <div class="footer-brand">
+      <h3>Om Bhandarkar</h3>
+      <p>Data Analyst | Turning Data into Decisions</p>
+    </div>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/YOUR-LINK" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/ombhandarkar24" target="_blank" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="mailto:ombhandarkar2410@gmail.com" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://twitter.com/YOUR-LINK" target="_blank" aria-label="Twitter">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Om Bhandarkar. Built with passion for data analytics.</p>
+  </div>
 </footer>
 
 <!-- JS -->
 <script>
-  ScrollReveal().reveal('.section', {
+  // ScrollReveal Animations
+  ScrollReveal().reveal('.section-header', {
+    distance: '30px',
+    duration: 800,
+    easing: 'ease-out',
+    origin: 'bottom'
+  });
+
+  ScrollReveal().reveal('.bring-card, .project-card, .skill-category', {
     distance: '50px',
     duration: 800,
     easing: 'ease-out',
@@ -152,9 +419,25 @@
     interval: 150
   });
 
+  // Theme Toggle
   document.getElementById("theme-toggle").addEventListener("change", () => {
     document.body.classList.toggle("light-mode");
   });
+
+  // Smooth Scroll
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+  });
 </script>
 
-
+</body>
+</html>
